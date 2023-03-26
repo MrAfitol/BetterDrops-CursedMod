@@ -42,6 +42,8 @@ random_drops:
     color: Random
     # Cassie message on spawn drop. (Leave blank to disable)
     cassie: pitch_0.2 .g4... pitch_1 Supply jam_020_2 has been arrival
+    # Will the cashier announcement sound be played at the beginning and end?
+    cassie_bell: true
     # Will the gun have a full ammo?
     fill_max_ammo: true
     # Will the gun have a random attachments?
