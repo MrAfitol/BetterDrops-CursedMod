@@ -135,3 +135,5 @@ chaos_drop_wave:
   - GunFSP9
   - GunE11SR
 ```
+## Wiki
+**Be sure to check out the [Wiki](https://github.com/MrAfitol/BetterDrops-CursedMod/wiki)**
