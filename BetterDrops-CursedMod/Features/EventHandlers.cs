@@ -27,13 +27,6 @@
         {
             if (Plugin.Instance.Config.RandomDrops?.WaveSettings.IsEnabled == true && _coroutines.Count == 0)
                 _coroutines.Add(Timing.RunCoroutine(RandomDropCoroutine(Plugin.Instance.Config.RandomDrops)));
-
-            CursedPrimitiveObject primitiveObject = CursedPrimitiveObject.Create(PrimitiveType.Cube, new Vector3(-0.6f, 1001f, -40f), Vector3.one, Vector3.zero, Color.red);
-            CursedPrimitiveObject primitiveObject1 = CursedPrimitiveObject.Create(PrimitiveType.Cube, new Vector3(3f, 3f, 3f), Vector3.one, Vector3.zero, Color.red);
-            primitiveObject1.Transform.parent = primitiveObject.Transform;
-            primitiveObject1.Transform.localPosition = new Vector3(3f, 3f, 3f);
-            primitiveObject.Spawn();
-            primitiveObject1.Spawn();
         }
 
         public void OnRespawningTeam(RespawningTeamEventArgs ev)
