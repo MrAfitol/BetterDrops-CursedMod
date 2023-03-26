@@ -18,8 +18,8 @@
 
             if (!string.IsNullOrEmpty(config.Cassie))
             {
-                if (team == Team.ChaosInsurgency) CursedCassie.PlayAnnouncement(config.Cassie, true, false);
-                else CursedCassie.PlayAnnouncement(config.Cassie, false, true);
+                if (team == Team.ChaosInsurgency) CursedCassie.PlayAnnouncement(config.Cassie, false, config.CassieBell);
+                else CursedCassie.PlayAnnouncement(config.Cassie, false, config.CassieBell);
             }
         }
 
